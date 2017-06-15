@@ -6,6 +6,10 @@
   float: right;
 }
 
+.clearfix {
+  clear: both;
+}
+
 .clearfix::after {
   content: "";
   display: table;
@@ -37,3 +41,15 @@
     display: inline;
   }
 }
+
+@media only screen and (max-width:300px) {
+  .box1, .box2 {
+    width: 100;
+  }
+}
+
+/* TODO: Now add styles for how things should look on a larger screen:
+         - Hide the hamburger.
+         - Main should be all on one row, with padding spaced better for a larger screen.
+         - Just, ya know, try to make it look good! */
+/* @media only screen... */

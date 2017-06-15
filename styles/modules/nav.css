@@ -1,5 +1,5 @@
 .site-header {
-  background: #FFEAAA;
+  background: #777;
 }
 
 /* REVIEW: Float the main header to the left, to make room for the hamburger menu. */
@@ -35,6 +35,10 @@
   border-bottom: 1px solid #ccc;
 }
 
+.main-banner {
+  width: 100%
+}
+
 #filters {
   padding: 0;
   list-style: none;
@@ -52,9 +56,3 @@
   font-weight: bold;
   text-decoration: none;
 }
-
-/* TODO: Now add styles for how things should look on a larger screen:
-         - Hide the hamburger.
-         - Main should be all on one row, with padding spaced better for a larger screen.
-         - Just, ya know, try to make it look good! */
-/* @media only screen... */

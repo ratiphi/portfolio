@@ -4,27 +4,42 @@
     <meta charset="utf-8">
     <title>Tim Turner - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/icons.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/layout.css">
-    <link rel="stylesheet" href="styles/modules.css">
+    <link rel="stylesheet" href="styles/base/reset.css">
+    <link rel="stylesheet" href="styles/fonts/icons.css">
+    <link rel="stylesheet" href="styles/base/base.css">
+    <link rel="stylesheet" href="styles/layout/layout.css">
+    <link rel="stylesheet" href="styles/modules/nav.css">
+    <link rel="stylesheet" href="styles/modules/slider.css">
   </head>
   <body>
-    <header>
+    <header class="site-header clearfix">
       <div>
-        <img src="http://placehold.it/200x70">
-        <nav>
-          <ul>
-            <li><a href="#">Nav Item 1</a></li>
-            <li><a href="#">Nav Item 2</a></li>
-            <li><a href="#">Nav Item 3</a></li>
-            <li><a href="#">Nav Item 4</a></li>
-          </ul>
+        <h1>Tim Turner</h1>
+        <nav class="main-nav">
           <span class="icon-menu"></span>
+          <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="http://github.com/ratiphi">Github</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
         </nav>
       </div>
     </header>
+    <div class="slideShow">
+      <img class="placeHolder" src="img/slide1-1080x450.jpg" alt="Tim Turner">
+      <div class="layer1"></div>
+      <div class="layer2"></div>
+      <div class="layer3"></div>
+      <div class="slideOverlay"><p>Code by Tim Turner</p></div>
+    </div>
+    <!-- <div id="slider">
+      <ul class="slides">
+        <li class="slide"><img src="img/test1-720x400.jpg"></li>
+        <li class="slide"><img src="img/test2-720x400.jpg"></li>
+        <li class="slide"><img src="img/test3-720x400.jpg"></li>
+        <li class="slide"><img src="img/test1-720x400.jpg"></li>
+      </ul>
+    </div> -->
     <main>
       <img class="main-banner" src="http://placehold.it/960x450">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -44,6 +59,9 @@
     <div class="clearfix"></div>
 
     <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/slider.js"></script>
   </body>
 
 </html>
