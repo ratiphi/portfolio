@@ -1,3 +1,13 @@
+p {
+  font-size: 4vw;
+  padding-top: 3vw;
+  padding-left: 2vw;
+}
+
+header {
+  background: #777;
+  height: 10vw;
+}
 
 img {
   max-width: 100%;
