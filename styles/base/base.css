@@ -1,12 +1,15 @@
-p {
-  font-size: 4vw;
-  padding-top: 3vw;
-  padding-left: 2vw;
-}
 
 header {
   background: #777;
   height: 10vw;
+}
+
+header div h1 {
+  float: left;
+  padding-left: 2vw;
+  padding-top: .1vw;
+  padding-bottom: .5vw;
+  font-size: 6vw;
 }
 
 img {
@@ -19,6 +22,23 @@ body {
   font-size: 100%;
   color: #313131;
 }
+
+main {
+  width: 100%;
+  margin: 2vw;
+  outline: dotted 2px orange;
+}
+
+main h2 {
+  font-size: 3vw;
+  text-decoration: underline;
+}
+
+main p {
+  font-size: 2vw;
+  padding-right: 2vw;
+}
+
 /*
 header {
   height: 80px;
@@ -31,11 +51,7 @@ header {
   outline: dotted 3px green;
 }*/
 
-header div h1 {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-size: 2em;
-}
+
 
 /*header div img {
   float: left;
@@ -47,12 +63,6 @@ nav ul li {
   display: inline-block;
   margin-right: 70px;
   margin-top: 45px;
-}
-
-main {
-  width: 100%;
-  margin: 30px auto;
-  outline: dotted 3px orange;
 }
 
 .sub-banners {
@@ -87,7 +97,7 @@ main {
 
 .featured-content p {
   line-height: 26px;
-  outline: dotted 3px orange;
+  outline: dotted 2px blue;
   height: 300px;
   overflow: auto;
 }
