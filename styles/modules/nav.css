@@ -1,7 +1,36 @@
+@media only screen and (min-width: 640px) {
+  .main-nav ul {
+    float: right;
+    padding-right: 10px;
+    display: block;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    border: none;
+    font-size: 2vw;
+  }
+
+  .main-nav span.icon-menu {
+    display: none;
+  }
+
+  body {
+    background-color: #999;
+  }
+
+  header {
+    background: #444;
+  }
+
+  header h1 {
+    color: #fff;
+  }
+}
 
 .icon-menu {
   float: right;
-  font-size: 2em;
+  font-size: 2vw;
 }
 
 .heading-group-h1 {
@@ -14,10 +43,10 @@
 }
 
 .main-nav ul {
-  display: none;
-  padding: 0;
+  /*display: none;*/
+  padding-top: .5vw;
   list-style: none;
-  clear: both;
+  /*clear: both;*/
 }
 
 .main-nav:hover ul {
@@ -25,48 +54,7 @@
 }
 
 .main-nav li {
-  margin-right: .4em;
-  font-size: 1.5em;
+  margin-right: 2vw;
+  font-size: 1.5vw;
   padding: .5em .2em;
-  border-bottom: 1px solid #ccc;
-}
-
-.main-banner {
-  width: 100%
-}
-
-#filters {
-  padding: 0;
-  list-style: none;
-}
-
-.template {
-  display: none;
-}
-
-.byline {
-  color: #777;
-}
-
-.byline a {
-  font-weight: bold;
-  text-decoration: none;
-}
-
-@media only screen and (min-width: 640px) {
-  .main-nav ul {
-    float: right;
-    padding-right: 10px;
-    display: block;
-  }
-
-  .main-nav li {
-    display: inline-block;
-    border: none;
-    font-size: 1.25em;
-  }
-
-  .main-nav span.icon-menu {
-    display: none;
-  }
 }

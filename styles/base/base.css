@@ -1,3 +1,6 @@
+.clearfix {
+  clear: both;
+}
 
 header {
   background: #777;
@@ -11,15 +14,15 @@ header h1 {
   font-size: 5vw;
 }
 
-img {
-  max-width: 100%;
-}
-
 body {
   font-family: helvetica;
   line-height: 1.5;
   font-size: 100%;
   color: #313131;
+}
+
+img {
+  max-width: 100%;
 }
 
 main {
@@ -38,30 +41,14 @@ main p {
   padding-right: 2vw;
 }
 
-/*
-header {
-  height: 80px;
-  background: #777;
-}*/
-
-/*header div {
-  width: 100%;
-  margin: 0 auto;
-  outline: dotted 3px green;
-}*/
-
-
-
-/*header div img {
-  float: left;
-  margin-right: 50px;
-  margin-top: 15px;
-}*/
-
 nav ul li {
   display: inline-block;
-  margin-right: 70px;
-  margin-top: 45px;
+  /*margin-right: 1vw;*/
+  margin-top: 3.5vw;
+}
+
+nav ul li a {
+  font-size: 3vw;
 }
 
 .sub-banners {
@@ -87,6 +74,7 @@ nav ul li {
   float: left;
   margin-top: 30px;
 }
+
 .featured-content h2 {
   font-size: 30px;
   text-transform: capitalize;
@@ -141,7 +129,7 @@ a, a:link, a:active {
 }
 
 a:hover, a:focus {
-  color: #29506D;
+  color: #5a86a6;
 }
 
 a:visited {

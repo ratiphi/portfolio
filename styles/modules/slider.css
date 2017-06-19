@@ -1,30 +1,3 @@
-/*JS Slider styles*/
-/*#slider {
-  width: 720px;
-  height: 400px;
-  overflow: hidden;
-}
-
-#slider .slides {
-  display: block;
-  width: 6000px;
-  height: 400px;
-  margin: 0;
-  padding: 0;
-}
-
-#slider .slide {
-  float: left;
-  list-style-type: none;
-  width: 720px;
-  height: 400px;
-}*/
-
-/*CSS Slider styles*/
-/** {
-  box-sizing: border-box;
-}*/
-
 @keyframes layer2Anim {
   0%{opacity:0;}
   17%{opacity:0;}
