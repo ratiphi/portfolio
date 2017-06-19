@@ -4,6 +4,11 @@
   font-size: 2em;
 }
 
+.heading-group-h1 {
+  float: left;
+  padding: 0 0 .2em 1em;
+}
+
 .main-nav {
   padding: 0.1em;
 }
@@ -46,4 +51,22 @@
 .byline a {
   font-weight: bold;
   text-decoration: none;
+}
+
+@media only screen and (min-width: 640px) {
+  .main-nav ul {
+    float: right;
+    padding-right: 10px;
+    display: block;
+  }
+
+  .main-nav li {
+    display: inline-block;
+    border: none;
+    font-size: 1.25em;
+  }
+
+  .main-nav span.icon-menu {
+    display: none;
+  }
 }
