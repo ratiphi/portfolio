@@ -1,3 +1,10 @@
+.main-nav ul {
+  display: none;
+  padding-top: .5vw;
+  list-style: none;
+  /*clear: both;*/
+}
+
 @media only screen and (min-width: 640px) {
   .main-nav ul {
     float: right;
@@ -30,7 +37,9 @@
 
 .icon-menu {
   float: right;
-  font-size: 2vw;
+  font-size: 8vw;
+  padding-top: 1vw;
+  padding-right: 1vw;
 }
 
 .heading-group-h1 {
@@ -40,13 +49,6 @@
 
 .main-nav {
   padding: 0.1em;
-}
-
-.main-nav ul {
-  /*display: none;*/
-  padding-top: .5vw;
-  list-style: none;
-  /*clear: both;*/
 }
 
 .main-nav:hover ul {
