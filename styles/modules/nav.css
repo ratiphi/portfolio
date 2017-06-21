@@ -18,28 +18,21 @@
     font-size: 2vw;
   }
 
-  .main-nav span.icon-menu {
+  .menu-btn span.icon-menu {
     display: none;
   }
 
-  body {
-    background-color: #999;
-  }
-
-  header {
-    background: #444;
-  }
-
-  header h1 {
-    color: #fff;
+  .responsive-menu ul li {
+    display: none;
   }
 }
 
 .icon-menu {
   float: right;
   font-size: 8vw;
-  padding-top: 1vw;
+  padding-top: .8vw;
   padding-right: 1vw;
+  color: #fff;
 }
 
 .heading-group-h1 {

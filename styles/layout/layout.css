@@ -27,6 +27,9 @@
     height: auto;
     margin-right: 2vw;
   }
+  div.slideShow {
+    float: none;
+  }
 }
 
 .heading-group-h1 {
