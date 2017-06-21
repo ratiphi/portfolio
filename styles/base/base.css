@@ -53,6 +53,22 @@ nav ul li a {
   font-size: 3vw;
 }
 
+.project-template {
+  display: none;
+}
+
+#projects-section h3 {
+  font-size: 2vw;
+}
+
+#projects-section time {
+  padding-right: 3vw;
+}
+
+#projects-section p {
+  padding-bottom: 3vw;
+}
+
 .sub-banners {
   margin-top: 3vw;
 }
