@@ -17,6 +17,7 @@
 
 .slideShow {
   position: relative;
+  float: right;
 }
 
 .placeHolder {

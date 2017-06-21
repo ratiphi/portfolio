@@ -3,7 +3,7 @@
 }
 
 header {
-  background: #777;
+  background: #444;
   height: 10vw;
 }
 
@@ -12,6 +12,7 @@ header h1 {
   padding-left: 2vw;
   padding-top: 1.5vw;
   font-size: 5vw;
+  color: #fff;
 }
 
 body {
@@ -19,6 +20,7 @@ body {
   line-height: 1.5;
   font-size: 100%;
   color: #313131;
+  background-color: #999;
 }
 
 img {
