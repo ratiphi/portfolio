@@ -13,10 +13,10 @@
 
 .menu-btn span {
 	display: block;
-	width: 19px;
+	/*width: 19px;
 	height: 3px;
-	margin: 4px 0;
-	background: #fff;
+	margin: 4px 0;*/
+	/*background: #fff;*/
 	z-index: 99;
 }
 

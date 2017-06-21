@@ -1,7 +1,31 @@
+.sub-banners li {
+  width: 95%;
+  height: auto;
+}
+
+.sub-banners img {
+  width: 100%;
+  height: auto;
+}
+
+.featured-content img {
+  width: 100%;
+  height: auto;
+}
+
 @media only screen and (min-width: 640px) {
   .heading-group-h1 {
     padding: .1em .1em .1em 2em;
     float: none;
+  }
+  .sub-banners li {
+    width: 47%;
+    height: auto;
+  }
+  .featured-content img {
+    width: 40%;
+    height: auto;
+    margin-right: 2vw;
   }
 }
 
