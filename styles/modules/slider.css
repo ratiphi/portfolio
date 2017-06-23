@@ -36,21 +36,21 @@
 }
 
 .layer1 {
-  background-image: url('/portfolio/img/slide1-1080x450.jpg');
+  background-image: url('https://ratiphi.github.io/img/slide1-1080x450.jpg');
 }
 
 .layer2 {
-  background-image: url('/portfolio/img/slide2-1080x450.jpg');
+  background-image: url('https://ratiphi.github.io/img/slide2-1080x450.jpg');
   animation: layer2Anim 10s infinite;
 }
 
 .layer3 {
-  background-image: url('/portfolio/img/slide3-1080x450.jpg');
+  background-image: url('https://ratiphi.github.io/img/slide3-1080x450.jpg');
   animation: layer3Anim 10s infinite;
 }
 
 .slideOverlay {
-  background-image: url('/portfolio/img/overlay.png');
+  background-image: url('https://ratiphi.github.io/img/overlay.png');
   background-attachment: fixed;
   position: absolute;
   width: 100%;
