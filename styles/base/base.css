@@ -137,6 +137,13 @@ footer {
   background: #222;
 }
 
+footer p {
+  font-size: 1.5vw;
+  color: #fff;
+  padding-left: 2vw;
+  padding-top: 1vw;
+}
+
 hr {
   margin: 1em;
   width: 100%;
