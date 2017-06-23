@@ -59,6 +59,7 @@ nav ul li a {
 
 #projects-section h3 {
   font-size: 2vw;
+  margin-top: 3vw;
 }
 
 #projects-section time {
@@ -67,7 +68,10 @@ nav ul li a {
 }
 
 #projects-section p {
+  height: 5vw;
+  width: 75vw;
   padding-bottom: 3vw;
+  overflow: auto;
 }
 
 #projects-section a {
