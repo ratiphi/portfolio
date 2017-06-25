@@ -10,17 +10,21 @@ function ProjectGen (rawDataObj) {
 }
 
 ProjectGen.prototype.toHtml = function () {
-  var $newProject = $('.project-template').clone();
+  // var $newProject = $('.project-template').clone();
+  //
+  // $newProject.removeClass('project-template');
+  //
+  // $newProject.find('h3').html(this.title);
+  // $newProject.find('time').attr('datetime', this.date);
+  // $newProject.find('time').html(this.date);
+  // $newProject.find('a').attr('href', this.url);
+  // $newProject.find('p').html(this.description);
+  //
+  // return $newProject;
 
-  $newProject.removeClass('project-template');
-
-  $newProject.find('h3').html(this.title);
-  $newProject.find('time').attr('datetime', this.date);
-  $newProject.find('time').html(this.date);
-  $newProject.find('a').attr('href', this.url);
-  $newProject.find('p').html(this.description);
-
-  return $newProject;
+  var template = $('#my-template').html();
+  var templateRender = Handlebars.compile(template);
+  return templateRender(this);
 };
 
 rawData.sort(function(a, b) {

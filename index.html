@@ -63,18 +63,24 @@
     <div class="clearfix"></div>
 
     <main>
-      <div class="projects-content">
-        <h2 id="projects">Projects</h2>
-        <section id="projects-section">
-          <div class="project-template">
-              <h3>Title</h3>
-              <time pubdate datetime="2000-01-01">Date</time>
-              <a href="">Link to project</a>
-              <p>Description</p>
-          </div>
-        </section>
-        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
-      </div>
+        <div class="projects-content">
+          <h2 id="projects">Projects</h2>
+          <section id="projects-section">
+
+            <!-- begin handlebars template -->
+            <script id="my-template" type="text/x-handlebars-template">
+              <div id="project-template">
+                  <h3>{{title}}</h3>
+                  <time pubdate datetime="2000-01-01">{{date}}</time>
+                  <a href={{url}}>Link to project</a>
+                  <p>{{description}}</p>
+              </div>
+            </script>
+            <!-- end handlebars template -->
+
+          </section>
+        </div>
+
       <ul class="sub-banners">
         <li><img src="https://placehold.it/400x375"></li>
         <li><img src="https://placehold.it/400x375"></li>
@@ -96,8 +102,8 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <script src="js/app.js"></script>
-    <!-- <script src="js/slider.js"></script> -->
     <script src="js/hamburger.js"></script>
     <script src="js/projectsData.js"></script>
     <script src="js/project.js"></script>
