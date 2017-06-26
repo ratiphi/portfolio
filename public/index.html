@@ -63,23 +63,28 @@
     <div class="clearfix"></div>
 
     <main>
-        <div class="projects-content">
-          <h2 id="projects">Projects</h2>
-          <section id="projects-section">
+      <div class="projects-content">
+        <h2 id="projects">Projects</h2>
+        <section id="projects-section">
 
-            <!-- begin handlebars template -->
-            <script id="my-template" type="text/x-handlebars-template">
-              <div id="project-template">
-                  <h3>{{title}}</h3>
-                  <time pubdate datetime="2000-01-01">{{date}}</time>
-                  <a href={{url}}>Link to project</a>
-                  <p>{{description}}</p>
-              </div>
-            </script>
-            <!-- end handlebars template -->
+          <!-- begin handlebars template -->
+          <script id="my-template" type="text/x-handlebars-template">
+            <div id="project-template">
+                <h3>{{title}}</h3>
+                <time pubdate datetime="2000-01-01">{{date}}</time>
+                <a href={{url}}>Link to project</a>
+                <p>{{description}}</p>
+            </div>
+          </script>
+          <!-- end handlebars template -->
 
-          </section>
-        </div>
+        </section>
+      </div>
+
+      <section id="project-stats">
+        <dt>Author:</dt> <dd id="project-author">Tim Turner</dd>
+        <dt>Total projects:</dt> <dd id="projects-avgwords"></dd>
+      </section>
 
       <ul class="sub-banners">
         <li><img src="https://placehold.it/400x375"></li>
@@ -108,7 +113,7 @@
     <!-- <script src="js/projectsData.js"></script> -->
     <script src="js/project.js"></script>
     <script>
-      Project.fetchAll();
+      app.Project.fetchAll();
     </script>
   </body>
 
