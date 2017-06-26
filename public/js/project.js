@@ -62,7 +62,7 @@ var app = app || {};
       return proj.description.split(' ').length;
     }).reduce((acc, cur) => {
       acc += cur;
-      return acc/Project.all.length;
+      return Math.round(acc/Project.all.length);
     })
   };
 

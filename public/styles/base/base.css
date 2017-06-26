@@ -78,12 +78,14 @@ nav ul li a {
   font-size: 1.5vw;
 }
 
-#project-count {
+#project-stats {
+  width: 95%;
+  margin-top: 2vw;
   font-size: 2vw;
 }
 
-#project-author {
-  font-size: 2vw;
+#project-stats dt {
+  text-decoration: underline;
 }
 
 .sub-banners {
