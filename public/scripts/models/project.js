@@ -44,13 +44,13 @@ var app = app || {};
   Project.fetchAll = function() {
     if (localStorage.rawData) {
       Project.loadAll(JSON.parse(localStorage.rawData));
-      initIndexPage();
+      app.projectView.initIndexPage();
     } else {
       $.getJSON('/data/projectsData.json')
       .then(function(data) {
         localStorage.rawData = JSON.stringify(data);
         Project.loadAll(JSON.parse(localStorage.rawData));
-        initIndexPage();
+        app.projectView.initIndexPage();
       }, function(err) {
         console.error('Error: ' + err);
       });
@@ -66,12 +66,12 @@ var app = app || {};
     })
   };
 
-  function initIndexPage() {
-    Project.all.forEach(function(project) {
-      $('#projects-section').append(project.toHtml());
-    });
-    $('#projects-avgwords').append(Project.avgWords());
-  }
+  // function initIndexPage() {
+  //   Project.all.forEach(function(project) {
+  //     $('#projects-section').append(project.toHtml());
+  //   });
+  //   $('#projects-avgwords').append(Project.avgWords());
+  // }
 
 module.Project = Project;
 })(app);
