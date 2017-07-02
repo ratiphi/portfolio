@@ -21,9 +21,9 @@
 
       <nav class="main-nav">
         <ul>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="/">Projects</a></li>
+          <li><a href="/about">About</a></li>
           <li><a href="http://github.com/ratiphi">Github</a></li>
-          <li><a href="#about">About</a></li>
         </ul>
       </nav>
 
@@ -31,23 +31,23 @@
         <div class="menu-btn" id="menu-btn">
           <span class="icon-menu"></span>
         </div>
-        <div class="responsive-menu">
+        <!-- <div class="responsive-menu">
           <ul>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="/projects">Projects</a></li>
+            <li><a href="/about">About</a></li>
             <li><a href="http://github.com/ratiphi">Github</a></li>
-            <li><a href="#about">About</a></li>
           </ul>
-        </div>
+        </div> -->
       </div>
 
         <div class="mobile-link">
-          <a href="#projects">Projects</a>
+          <a href="/">Projects</a>
+        </div>
+        <div class="mobile-link">
+          <a href="/about">About</a>
         </div>
         <div class="mobile-link">
           <a href="http://github.com/ratiphi">Github</a>
-        </div>
-        <div class="mobile-link">
-          <a href="#about">About</a>
         </div>
 
     </header>
@@ -79,23 +79,28 @@
           <!-- end handlebars template -->
 
         </section>
+
+        <section id="project-stats">
+          <dt>Projects Author:</dt> <dd id="project-author">Tim Turner</dd>
+          <dt>Average words per project description:</dt> <dd id="projects-avgwords"></dd>
+        </section>
       </div>
 
-      <section id="project-stats">
-        <dt>Projects Author:</dt> <dd id="project-author">Tim Turner</dd>
-        <dt>Average words per project description:</dt> <dd id="projects-avgwords"></dd>
-      </section>
 
-      <ul class="sub-banners">
-        <li><img src="https://placehold.it/400x375"></li>
-        <li><img src="https://placehold.it/400x375"></li>
-      </ul>
-      <section class="featured-content">
-        <img src="https://placehold.it/480x400">
-        <h2 id="about">About</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi a est enim, numquam ipsam mollitia blanditiis illo labore dolorum nam aperiam, at sed necessitatibus quisquam iure exercitationem incidunt, veritatis adipisci tempora ex nobis praesentium! Eaque nobis, odio asperiores magnam nam, itaque cupiditate assumenda doloremque beatae nemo officiis laboriosam maxime quam, quo sed. Inventore id corrupti, non nisi ratione autem eius, officia voluptatibus unde consectetur natus, architecto cupiditate. Harum, ea, sed. Laudantium libero perferendis facilis rem quas vitae excepturi! Sed totam incidunt, culpa quidem quod, fugit molestias? Suscipit eum earum saepe repudiandae, reprehenderit. Quo eveniet dolore voluptas voluptatibus aspernatur consequuntur enim tenetur harum excepturi eos, dolor nisi repudiandae. Fugiat, officia possimus quibusdam quis eius amet iure illo ea corporis alias, ut sequi commodi, dolores quia nesciunt cupiditate. Fuga veritatis, eligendi iste tenetur doloremque vitae doloribus facilis eaque expedita maxime officia adipisci obcaecati aliquam ut enim, dolore aperiam! Nihil soluta, temporibus?</p>
-        <button type="button" onclick="window.location.href='mailto:timmyturner@me.com';" title="email timmyturner@me.com">Contact me!</button>
-      </section>
+      <div class="about-content">
+        <ul class="sub-banners">
+          <li><img src="https://placehold.it/400x375"></li>
+          <li><img src="https://placehold.it/400x375"></li>
+        </ul>
+
+        <section class="featured-content">
+          <img src="https://placehold.it/480x400">
+          <h2 id="about">About</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur excepturi a est enim, numquam ipsam mollitia blanditiis illo labore dolorum nam aperiam, at sed necessitatibus quisquam iure exercitationem incidunt, veritatis adipisci tempora ex nobis praesentium! Eaque nobis, odio asperiores magnam nam, itaque cupiditate assumenda doloremque beatae nemo officiis laboriosam maxime quam, quo sed. Inventore id corrupti, non nisi ratione autem eius, officia voluptatibus unde consectetur natus, architecto cupiditate. Harum, ea, sed. Laudantium libero perferendis facilis rem quas vitae excepturi! Sed totam incidunt, culpa quidem quod, fugit molestias? Suscipit eum earum saepe repudiandae, reprehenderit. Quo eveniet dolore voluptas voluptatibus aspernatur consequuntur enim tenetur harum excepturi eos, dolor nisi repudiandae. Fugiat, officia possimus quibusdam quis eius amet iure illo ea corporis alias, ut sequi commodi, dolores quia nesciunt cupiditate. Fuga veritatis, eligendi iste tenetur doloremque vitae doloribus facilis eaque expedita maxime officia adipisci obcaecati aliquam ut enim, dolore aperiam! Nihil soluta, temporibus?</p>
+          <button type="button" onclick="window.location.href='mailto:timmyturner@me.com';" title="email timmyturner@me.com">Contact me!</button>
+        </section>
+      </div>
+
     </main>
 
     <div class="clearfix"></div>
@@ -108,9 +113,12 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
-    <script src="scripts/controllers/app.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia/page.js/master/page.js"></script>
+    <script src="scripts/models/project.js"></script>
+    <script src="scripts/views/projectView.js"></script>
+    <script src="scripts/controllers/indexController.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
     <script src="scripts/controllers/hamburger.js"></script>
-    <script src="scripts/controllers/project.js"></script>
     <script>
       app.Project.fetchAll();
     </script>
